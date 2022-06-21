@@ -1,0 +1,75 @@
+body{
+    background-color: mistyrose;
+}
+button{
+    width: 150px;
+    margin: 30px;
+    background: gray;
+    border: none;
+    padding: 10px;
+    text-align: center;
+    border-radius: 6px;
+}
+
+a{
+    text-decoration: none;
+    font-size: 18px;
+    color: yellow;
+}
+
+.text1{
+    font-family: 'Fascinate', cursive;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.box1{
+    width: 120px;
+    height: 120px;
+    margin: 30px;
+    background-color: blueviolet;
+    transition-duration: 2s;
+}
+
+.box1:hover{
+    width: 200px;
+}
+
+.circle1{
+    width: 120px;
+    height: 120px;
+    margin: 30px;
+    background-color: brown;
+    border: 2px solid black;
+    border-radius: 50%;
+}
+
+.moveani{
+    width: 120px;
+    height: 120px;
+    margin: 30px;
+    background-color: yellowgreen;
+    animation: 1s alternate infinite ease-in-out akki;
+
+}
+@keyframes akki{
+    100%{
+        transform: translateX(300px);
+    }
+}
+
+
+/* meadia */
+@media only screen and (max-width:540px){
+   .moveani{
+    height: 120px;
+    width: 120px;
+    background-color: blue;
+   }
+}
+@media only screen and (min-width:740px){
+    .moveani{
+        height: 120px;
+        width: 120px;
+        background-color: red;
+    }
+}
